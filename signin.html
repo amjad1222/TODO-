@@ -11,21 +11,12 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div
-      class="container"
-      style="
-        width: 400px;
-        height: 550px;
-        border: 5px solid black;
-        display: block;
-        align-items: center;
-        margin-top: 50px;
-      "
-    >
-      >
-      <img src="1.jfif" alt="" />
-      <h2>Sign in</h2>
+  <body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container w-25 border-3 border border-black rounded-4 p-3">
+      <img src="1.jfif" class="img-thumbnail w-100" alt="" />
+
+      <h2 class="fw-semibold mt-3">Sign in</h2>
+
       <div class="form-floating mb-3">
         <input
           type="email"
@@ -33,8 +24,9 @@
           id="floatingInput"
           placeholder="name@example.com"
         />
-        <label for="floatingInput"></label>
+        <label for="floatingInput">Email address</label>
       </div>
+
       <div class="form-floating">
         <input
           type="password"
@@ -42,19 +34,39 @@
           id="floatingPassword"
           placeholder="Password"
         />
-        <label for="floatingPassword"></label>
+        <label for="floatingPassword">Password</label>
       </div>
-      <a href="task.html">
-        <button type="button" class="btn btn-warning">Sign in</button>
-      </a>
+
       <br />
-      <button type="button" class="btn btn-primary btn-lg">Google</button>
-      <button type="button" class="btn btn-secondary btn-lg">FaceBook</button>
-      <h3>
+
+      <div class="d-flex justify-content-center">
+        <a href="task.html" class="btn btn-warning w-100">Sign in</a>
+      </div>
+
+      <br />
+
+      <p class="text-center">OR</p>
+
+      <div class="d-flex justify-content-evenly">
+        <button type="button" class="btn btn-warning btn-lg">Google</button>
+
+        <button
+          type="button"
+          class="btn btn-secondary btn-lg"
+          style="background-color: blue"
+        >
+          FaceBook
+        </button>
+      </div>
+
+      <br />
+
+      <div class="d-flex justify-content-evenly">
         Already have an account?
         <button type="button" class="btn btn-warning">Sign up</button>
-      </h3>
+      </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
